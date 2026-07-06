@@ -337,7 +337,7 @@ h3 {
 
 .product-image,
 .product-placeholder {
-  min-height: 430px;
+  height: 360px;
   display: grid;
   place-items: center;
   margin-bottom: 24px;
@@ -347,14 +347,10 @@ h3 {
 }
 
 .product-image img {
-  width: 92%;
-  max-width: 420px;
-  max-height: 410px;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin: auto;
-  filter: drop-shadow(0 32px 24px rgba(0,0,0,.25));
 }
 
 .product-placeholder {
@@ -558,15 +554,15 @@ footer {
     min-height: auto;
   }
 
-  .product-image,
-  .product-placeholder {
-    min-height: 360px;
-  }
+.product-image,
+.product-placeholder {
+  height: 300px;
+}
 
-  .product-image img {
-    width: min(360px, 120%);
-    max-height: 350px;
-  }
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .community-stats{
 display:grid;
