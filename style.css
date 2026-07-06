@@ -603,48 +603,86 @@ position:relative;
 }
 
 .hero-tag {
-  position: absolute;
-  background: rgba(5, 5, 5, .72);
-  backdrop-filter: blur(10px);
-  color: #fff;
-  padding: 9px 14px;
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 12px;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  transition: .25s ease;
-  box-shadow: 0 18px 34px rgba(0,0,0,.28);
+    position: absolute;
+    background: rgba(5, 5, 5, .82);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    transition: .25s ease;
+    box-shadow: 0 18px 34px rgba(0,0,0,.28);
+    text-decoration: none;
 }
 
 .hero-tag:hover {
-  background: rgba(214, 0, 0, .9);
-  border-color: rgba(214,0,0,.9);
-  transform: translateY(-3px);
-  box-shadow: 0 24px 48px rgba(214,0,0,.22);
+    background: rgba(214, 0, 0, .92);
+    border-color: rgba(214,0,0,.92);
+    transform: translateY(-3px);
+    box-shadow: 0 24px 48px rgba(214,0,0,.22);
 }
 
 .top-left {
-  top: 18px;
-  left: 18px;
+    top: 24px;
+    left: 24px;
 }
 
 .top-right {
-  top: 18px;
-  right: 18px;
+    top: 24px;
+    right: 24px;
 }
 
 .bottom-left {
-  bottom: 18px;
-  left: 18px;
+    bottom: 24px;
+    left: 24px;
 }
 
 .bottom-right {
-  bottom: 18px;
-  right: 18px;
+    bottom: 24px;
+    right: 24px;
 }
 
+@media (max-width: 700px) {
+    .hero-tag {
+        padding: 10px 14px;
+        font-size: 9px;
+        letter-spacing: .14em;
+    }
+
+    .top-left,
+    .top-right,
+    .bottom-left,
+    .bottom-right {
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+    }
+
+    .top-left {
+        top: 14px;
+        left: 14px;
+    }
+
+    .top-right {
+        top: 14px;
+        right: 14px;
+    }
+
+    .bottom-left {
+        bottom: 14px;
+        left: 14px;
+    }
+
+    .bottom-right {
+        bottom: 14px;
+        right: 14px;
+    }
+}
 @media (max-width: 560px) {
   .hero-tag {
     padding: 7px 10px;
