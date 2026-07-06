@@ -568,3 +568,37 @@ footer {
     max-height: 350px;
   }
 }
+.community-stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-bottom:50px;
+text-align:center;
+}
+
+.community-stats div{
+background:#101010;
+border:1px solid rgba(255,255,255,.08);
+padding:28px 18px;
+}
+
+.community-stats strong{
+display:block;
+font-size:34px;
+font-weight:900;
+color:#fff;
+margin-bottom:8px;
+}
+
+.community-stats span{
+color:#aaa;
+text-transform:uppercase;
+letter-spacing:.18em;
+font-size:11px;
+}
+
+@media(max-width:700px){
+.community-stats{
+grid-template-columns:1fr;
+}
+}
