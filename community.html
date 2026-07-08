@@ -4,25 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Community | Grow Godz</title>
-  <meta name="description" content="Grow Godz community page featuring growers, setups, journals, and cultivation culture." />
+  <meta name="description" content="Grow Godz community hub featuring growers, challenges, badges, Hall of Fame recognition, and cultivation culture." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="community-page">
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Grow Godz home">
       <img src="gg-logo-white.jpg" alt="Grow Godz logo" />
       <span>Grow Godz</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="community.html">Community</a>
-      <a href="index.html#journal">Journal</a>
+      <a href="journal.html">Journal</a>
       <a href="index.html#contact">Contact</a>
     </nav>
 
-    <a class="ig-link" href="https://instagram.com/grow.godz" target="_blank">@grow.godz</a>
+    <a class="ig-link" href="https://instagram.com/grow.godz" target="_blank" rel="noopener">@grow.godz</a>
   </header>
 
   <main>
@@ -31,223 +31,363 @@
         <p class="eyebrow">Grow Godz Community</p>
         <h1>SHOW<br>YOUR GROW</h1>
         <p class="lead">
-          A home for growers, setups, harvests, journals, and community features.
-          Built to spotlight the people behind the plants.
+          The central hub for Grow Godz growers, challenges, community recognition,
+          featured submissions, and the culture being built around the plant.
         </p>
 
         <div class="hero-actions">
-          <a href="#featured" class="btn primary">Featured Growers</a>
-          <a href="#submit" class="btn secondary">Submit Your Grow</a>
+          <a href="#garden" class="btn primary">Community Garden</a>
+          <a href="#challenge" class="btn secondary">Monthly Challenge</a>
         </div>
       </div>
 
       <div class="community-hero-card">
+        <img src="community-herov2.png" alt="Grow Godz community grow room feature" />
 
-    <img src="community-herov2.png" alt="Grow Godz Community Hero">
-
-    <a href="#featured" class="hero-tag top-left">
-         Featured 
-    </a>
-
-    <a href="#journals" class="hero-tag top-right">
-         Journal
-    </a>
-
-    <a href="#gallery" class="hero-tag bottom-left">
-         Best Setup
-    </a>
-
-    <a href="#submit" class="hero-tag bottom-right">
-         Harvest Winner
-    </a>
-
-</div>
+        <a href="#spotlight" class="hero-tag top-left" aria-label="Jump to community spotlight">Spotlight</a>
+        <a href="#garden" class="hero-tag top-right" aria-label="Jump to community garden">Garden</a>
+        <a href="#challenge" class="hero-tag bottom-left" aria-label="Jump to monthly challenge">Challenge</a>
+        <a href="#hall-of-fame" class="hero-tag bottom-right" aria-label="Jump to Hall of Fame">Hall of Fame</a>
+      </div>
     </section>
 
-    <section class="ticker">
-  <span>🏆 Weekly Features</span>
-  <span>📓 Grow Journals</span>
-  <span>🪴 Community Setups</span>
-  <span>🌿 Harvest Gallery</span>
-  <span>🎥 Grow Reels</span>
-</section>
+    <section class="ticker" aria-label="Community topics">
+      <span>Community Garden</span>
+      <span>Monthly Grow Challenge</span>
+      <span>Grow Godz Badges</span>
+      <span>Hall of Fame</span>
+      <span>Community Spotlight</span>
+    </section>
 
-    <section class="section collections" id="featured">
+    <section class="section community-week" id="this-week" aria-labelledby="this-week-title">
       <div class="section-heading">
-        <p class="eyebrow">Community Feature</p>
-        <h2>Community Highlights</h2>
-        <p>
-Explore the best growers, cultivation journals, proven techniques, and standout setups shared by the Grow Godz community.
-</p>
+        <p class="eyebrow">Weekly Build Notes</p>
+        <h2 id="this-week-title">This Week at Grow Godz</h2>
+        <p>A compact community status board that can be updated each week as the brand, grow, and community move forward.</p>
       </div>
 
-      <div class="collection-grid">
-        <article>
-    <span>GROWER SPOTLIGHT</span>
-    <h3>@grow.godz</h3>
-    <p>
-        Strain: Mule Fuel<br>
-        Stage: Early Veg<br>
-        Indoor Living Soil Grow
-    </p>
-</article>
+      <div class="community-week-grid">
+        <article class="community-week-card">
+          <span>Build</span>
+          <h3>Website Version 3 Complete</h3>
+          <p>The main pages now connect products, journal entries, and community features into one ecosystem.</p>
+        </article>
 
-<article>
-    <span>GROW JOURNALS</span>
-    <h3>Latest Community Updates</h3>
-    <p>
-        Follow every watering, training session,
-        and milestone from seed to harvest.
-    </p>
-</article>
+        <article class="community-week-card">
+          <span>Journal</span>
+          <h3>Journal Expanded</h3>
+          <p>The Build, Documented now tracks cultivation, packaging, community, and the Grow Godz origin story.</p>
+        </article>
 
-<article>
-    <span>LEARN</span>
-    <h3>Grow Tips & Techniques</h3>
-    <p>
-        Discover cultivation advice, equipment recommendations, and lessons shared by experienced growers.
-    </p>
-</article>
+        <article class="community-week-card">
+          <span>Challenge</span>
+          <h3>Community Challenge Live</h3>
+          <p>August is focused on clean grow setups, smart organization, and rooms that show real discipline.</p>
+        </article>
+
+        <article class="community-week-card">
+          <span>Grow</span>
+          <h3>Current Grow Update</h3>
+          <p>Latest cultivation notes and visual progress are documented in the Journal as the build continues.</p>
+        </article>
+
+        <article class="community-week-card">
+          <span>Packaging</span>
+          <h3>Packaging Progress</h3>
+          <p>Labels, bottle direction, posters, and product presentation are being shaped into a premium system.</p>
+        </article>
+      </div>
+
+      <div class="community-section-actions">
+        <a class="btn primary" href="journal.html">Follow the Build</a>
       </div>
     </section>
 
-    <section class="section products">
-      <div class="section-heading center">
-        <p class="eyebrow">Community Gallery</p>
-        <h2>Get featured.</h2>
+    <section class="section community-spotlight-hub" id="spotlight" aria-labelledby="spotlight-title">
+      <div class="section-heading">
+        <p class="eyebrow">Community Spotlight</p>
+        <h2 id="spotlight-title">One grower. One grow. One story. One lesson.</h2>
         <p>
-Submit your grow, setup, harvest, or reel for a chance to earn a featured spot on Grow Godz.
-</p>
+          A curated feature for a standout member of the Grow Godz community. This is where the story behind the setup matters as much as the final photo.
+        </p>
       </div>
 
-      <div class="product-grid">
+      <article class="community-spotlight-feature">
+        <div class="community-spotlight-image">
+          <img src="gotw1.png" alt="Featured Grow Godz community plant" />
+        </div>
 
-  <article class="product-card">
-    <div class="product-image">
-    <img src="gotw1.png" alt="Grow of the Week">
-</div>
-    <p class="tag">FEATURED</p>
-    <p class="tag">WEEKLY FEATURE</p>
-<h3>Grow of the Week</h3>
-<p>
-One standout grow selected each week based on plant health, cultivation skill, and community impact.
-</p>
-    <a href="#submit">Submit Your Grow →</a>
-</article>
+        <div class="community-spotlight-copy">
+          <span>Featured Grower</span>
+          <h3>@grow.godz</h3>
+          <dl>
+            <div>
+              <dt>Grow</dt>
+              <dd>Mule Fuel in early veg with indoor living soil.</dd>
+            </div>
+            <div>
+              <dt>Story</dt>
+              <dd>Building the room while building the brand, one documented stage at a time.</dd>
+            </div>
+            <div>
+              <dt>Lesson</dt>
+              <dd>Consistency wins early. Environment, patience, and clean notes create the foundation.</dd>
+            </div>
+          </dl>
+          <a class="btn primary" href="journal.html#community-spotlight">Read Full Story</a>
+        </div>
+      </article>
+    </section>
 
-<article class="product-card">
-    <div class="product-image">
-  <img src="setup.png" alt="Best Setup">
-</div>
-    <p class="tag">SETUPS</p>
-    <h3>Best Setup</h3>
-    <p>Show off your grow tent, room, or outdoor setup and inspire other growers.</p>
-    <a href="#submit">Share Your Setup →</a>
-</article>
+    <section class="section products community-gallery" id="garden" aria-labelledby="garden-title">
+      <div class="section-heading center">
+        <p class="eyebrow">Community Showcase</p>
+        <h2 id="garden-title">🌱 Community Garden</h2>
+        <p>
+          The permanent home for community submissions. Each card is built to be replaced with a real grow, harvest, setup, reel, or fresh submission.
+        </p>
+      </div>
 
-<article class="product-card">
-    <div class="product-image">
-    <img src="harvestpic.png" alt="Featured Harvest">
-</div>
-    <p class="tag">HARVESTS</p>
-    <h3>Featured Harvest</h3>
-    <p>Beautiful flower, unique genetics, and successful harvests deserve to be seen.</p>
-    <a href="#submit">Submit Harvest →</a>
-</article>
+      <div class="product-grid community-garden-grid">
+        <article class="product-card gallery-card">
+          <div class="product-image">
+            <img src="gotw1.png" alt="Healthy indoor cannabis plant selected for Grow of the Week" />
+          </div>
+          <p class="tag">Weekly Feature</p>
+          <h3>Grow of the Week</h3>
+          <p>One standout grow selected for plant health, cultivation skill, consistency, and community impact.</p>
+          <a href="#submit">Submit Your Grow -></a>
+        </article>
 
-<article class="product-card">
-    <div class="product-placeholder">📹</div>
-    <p class="tag">VIDEOS</p>
-    <h3>Grow Reels</h3>
-    <p>Short videos of grows, harvests, training, and time lapses from the community.</p>
-    <a href="#submit">Submit Video →</a>
-</article>
-        
-</div>
+        <article class="product-card gallery-card">
+          <div class="product-image">
+            <img src="harvestpic.png" alt="Featured cannabis harvest close-up" />
+          </div>
+          <p class="tag">Harvests</p>
+          <h3>Featured Harvest</h3>
+          <p>Beautiful flower, unique genetics, strong finish work, and successful harvests deserve a permanent showcase.</p>
+          <a href="#submit">Submit Harvest -></a>
+        </article>
+
+        <article class="product-card gallery-card">
+          <div class="product-image">
+            <img src="setup.png" alt="Indoor cannabis grow setup with lighting and cultivation equipment" />
+          </div>
+          <p class="tag">Setups</p>
+          <h3>Best Setup</h3>
+          <p>Clean tents, dialed rooms, thoughtful equipment layouts, and setups that help other growers learn.</p>
+          <a href="#submit">Share Your Setup -></a>
+        </article>
+
+        <article class="product-card gallery-card">
+          <div class="product-placeholder" aria-label="Grow Reels video placeholder">REELS</div>
+          <p class="tag">Videos</p>
+          <h3>Community Reels</h3>
+          <p>Short videos of grows, harvests, training, time lapses, and behind-the-scenes community moments.</p>
+          <a href="#submit">Submit Video -></a>
+        </article>
+
+        <article class="product-card gallery-card latest-submission">
+          <div class="product-image">
+            <img src="community-hero.png" alt="Latest Grow Godz community submission placeholder" />
+          </div>
+          <p class="tag">Fresh Drop</p>
+          <h3>Latest Submission</h3>
+          <p>The newest approved submission will live here, making the Garden feel current without changing the section design.</p>
+          <a href="#submit">Send Yours -></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section monthly-challenge" id="challenge" aria-labelledby="challenge-title">
+      <div class="challenge-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Monthly Grow Challenge</p>
+          <h2 id="challenge-title">August Challenge</h2>
+          <p class="challenge-theme">Show us your cleanest grow setup.</p>
+        </div>
+
+        <div class="challenge-details">
+          <article>
+            <span>Challenge Rules</span>
+            <p>Submit a clear photo or short video of your grow setup. Clean layouts, smart organization, healthy plants, and useful details matter.</p>
+          </article>
+
+          <article>
+            <span>How to Enter</span>
+            <p>Follow @grow.godz, post your setup, tag @grow.godz, and use #GrowGodz. Email submissions are also accepted.</p>
+          </article>
+
+          <article>
+            <span>Deadline</span>
+            <p>August 31, 2026 at 11:59 PM ET. The deadline text can be updated each month without changing the layout.</p>
+          </article>
+
+          <article>
+            <span>Prize</span>
+            <ul>
+              <li>Grow Godz merchandise</li>
+              <li>Homepage feature</li>
+              <li>Community Spotlight feature</li>
+              <li>Hall of Fame recognition</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="community-section-actions">
+          <a class="btn primary" href="#submit">Submit Your Grow</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section community-badges" id="badges" aria-labelledby="badges-title">
+      <div class="section-heading">
+        <p class="eyebrow">Manual Recognition System</p>
+        <h2 id="badges-title">Grow Godz Badges</h2>
+        <p>
+          Badges are manually awarded by Grow Godz for real community participation, strong submissions, standout moments, and lasting impact.
+          No login, backend, or automated scoring is active yet.
+        </p>
+      </div>
+
+      <div class="badge-grid">
+        <article class="badge-card"><span>01</span><h3>Founding Grower</h3><p>Earned by early community members who help shape the Grow Godz ecosystem.</p></article>
+        <article class="badge-card"><span>02</span><h3>First Submission</h3><p>Awarded when a grower sends their first approved grow, setup, harvest, or reel.</p></article>
+        <article class="badge-card"><span>03</span><h3>Grow of the Week</h3><p>Given to weekly grows selected for health, consistency, execution, and visual impact.</p></article>
+        <article class="badge-card"><span>04</span><h3>Challenge Winner</h3><p>Awarded to the monthly challenge winner after community and Grow Godz review.</p></article>
+        <article class="badge-card"><span>05</span><h3>Featured Harvest</h3><p>Reserved for exceptional harvest submissions with standout finish and presentation.</p></article>
+        <article class="badge-card"><span>06</span><h3>Community Voice</h3><p>For growers who contribute useful comments, questions, feedback, and lessons.</p></article>
+        <article class="badge-card"><span>07</span><h3>Hall of Fame</h3><p>The highest badge, reserved for exceptional members with lasting community recognition.</p></article>
+      </div>
+    </section>
+
+    <section class="section hall-of-fame" id="hall-of-fame" aria-labelledby="hall-title">
+      <div class="section-heading center">
+        <p class="eyebrow">Permanent Recognition</p>
+        <h2 id="hall-title">Hall of Fame</h2>
+        <p>
+          Hall of Fame is different from Grow of the Week. Only exceptional community members and submissions stay here until replaced.
+        </p>
+      </div>
+
+      <div class="hall-grid">
+        <article class="hall-card">
+          <div><img src="gotw1.png" alt="Best Grow Hall of Fame placeholder" /></div>
+          <span>Best Grow</span>
+          <h3>Open Slot</h3>
+          <p>Reserved for a grow that represents the highest standard of health, structure, and consistency.</p>
+        </article>
+
+        <article class="hall-card">
+          <div><img src="harvestpic.png" alt="Best Harvest Hall of Fame placeholder" /></div>
+          <span>Best Harvest</span>
+          <h3>Open Slot</h3>
+          <p>Reserved for a harvest with standout finish, visual quality, and documented grow work.</p>
+        </article>
+
+        <article class="hall-card">
+          <div><img src="setup.png" alt="Best Setup Hall of Fame placeholder" /></div>
+          <span>Best Setup</span>
+          <h3>Open Slot</h3>
+          <p>Reserved for a clean, efficient, inspiring setup that other growers can learn from.</p>
+        </article>
+
+        <article class="hall-card">
+          <div><img src="community-hero.png" alt="Community MVP Hall of Fame placeholder" /></div>
+          <span>Community MVP</span>
+          <h3>Open Slot</h3>
+          <p>Reserved for a member whose participation, support, and submissions strengthen the community.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section future-community" id="future" aria-labelledby="future-title">
+      <div class="section-heading">
+        <p class="eyebrow">Future Platform</p>
+        <h2 id="future-title">Built for what comes next.</h2>
+        <p>
+          These features are planned as future layers of the community. They are intentionally not active yet, so the current site stays simple, fast, and GitHub Pages compatible.
+        </p>
+      </div>
+
+      <div class="future-grid" aria-label="Future community features">
+        <article><span>Future</span><h3>Future User Profiles</h3><p>Grower pages, badges, and submission history.</p></article>
+        <article><span>Future</span><h3>Future Comments</h3><p>Curated discussion below grows, challenges, and stories.</p></article>
+        <article><span>Future</span><h3>Future Likes</h3><p>Simple reactions for community support and discovery.</p></article>
+        <article><span>Future</span><h3>Future Community Rankings</h3><p>Community leaderboards for growers, setups, and challenges.</p></article>
+        <article><span>Future</span><h3>Future XP System</h3><p>Progression tied to verified participation and recognition.</p></article>
+      </div>
     </section>
 
     <section class="section story" id="submit">
+      <div>
+        <div class="community-stats">
+          <div>
+            <strong>Growing Daily</strong>
+            <span>Community</span>
+          </div>
 
-    <div>
-      <div class="community-stats">
-  <div>
-    <strong>Growing Daily</strong>
-    <span>Community</span>
-  </div>
+          <div>
+            <strong>Monthly</strong>
+            <span>Challenges</span>
+          </div>
 
-  <div>
-    <strong>Weekly</strong>
-    <span>Features</span>
-  </div>
+          <div>
+            <strong>Manual</strong>
+            <span>Recognition</span>
+          </div>
+        </div>
 
-  <div>
-    <strong>24/7</strong>
-    <span>Grow Energy</span>
-  </div>
-</div>
-        <p class="eyebrow">HOW TO GET FEATURED</p>
-
+        <p class="eyebrow">How To Get Featured</p>
         <h2>Get your grow featured.</h2>
-
         <p>
-            Grow Godz highlights the best growers every week. Whether you're a beginner
-            or a seasoned cultivator, your work deserves to be seen.
+          Grow Godz highlights the best growers, setups, harvests, stories, and lessons.
+          Whether you're a beginner or a seasoned cultivator, your work deserves to be seen.
         </p>
-    </div>
+      </div>
 
-    <div>
-
-        <h3>① Follow @grow.godz</h3>
+      <div class="submission-steps">
+        <h3>1. Follow @grow.godz</h3>
         <p>Follow Grow Godz on Instagram to stay connected with the community.</p>
 
-        <br>
+        <h3>2. Post Your Grow</h3>
+        <p>Share your setup, harvest, training, progress photos, or videos.</p>
 
-        <h3>② Post Your Grow</h3>
-        <p>Share your setup, harvest, training, or progress photos and videos.</p>
+        <h3>3. Tag @grow.godz + #GrowGodz</h3>
+        <p>Grow Godz reviews public posts, tags, emails, and future site submissions manually.</p>
 
-        <br>
-
-        <h3>③ Tag @grow.godz + #GrowGodz</h3>
-        <p>We'll review submissions from Instagram and the Grow Godz website.</p>
-
-        <br>
-
-        <h3>④ Get Featured</h3>
-        <p>Outstanding growers will be showcased on the Community page and social media.</p>
-
-        <br><br>
+        <h3>4. Get Featured</h3>
+        <p>Approved submissions may appear in the Community Garden, Spotlight, Challenge, or Hall of Fame.</p>
 
         <div class="hero-actions">
-  <a class="btn primary" href="https://instagram.com/grow.godz" target="_blank">
-    Submit on Instagram
-  </a>
+          <a class="btn primary" href="https://instagram.com/grow.godz" target="_blank" rel="noopener">
+            Submit on Instagram
+          </a>
 
-  <a class="btn secondary" href="mailto:info@thegrowgodz.com">
-    Email Submission
-  </a>
-</div>
-
-    </div>
-
-</section>
+          <a class="btn secondary" href="mailto:info@thegrowgodz.com">
+            Email Submission
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="section contact">
       <p class="eyebrow">Connect</p>
       <h2>Ready to join the Grow Godz Community.</h2>
       <p>
-  Whether you're growing your first plant or your hundredth, Grow Godz is built
-  to showcase growers, share knowledge, and celebrate the craft.
-</p>
+        The Community page is built to showcase growers, document challenges, recognize participation,
+        and prepare the platform for future profiles, comments, rankings, and XP.
+      </p>
 
       <div class="contact-links">
         <a href="mailto:info@thegrowgodz.com">info@thegrowgodz.com</a>
-        <a href="https://instagram.com/grow.godz" target="_blank">@grow.godz</a>
+        <a href="https://instagram.com/grow.godz" target="_blank" rel="noopener">@grow.godz</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Grow Godz. All rights reserved.</p>
+    <p>&copy; 2026 Grow Godz. All rights reserved.</p>
     <p>Community showcase only. Follow applicable laws and platform policies.</p>
   </footer>
 </body>

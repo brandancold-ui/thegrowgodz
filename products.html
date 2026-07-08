@@ -1,268 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products | Grow Godz</title>
-  <meta name="description" content="Grow Godz products: Superism syrups, apparel, accessories, and limited drops." />
+  <meta name="description" content="Grow Godz marketplace showroom for Superism syrups, apparel, accessories, collectibles, and future drops." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="products-page marketplace-page">
   <header class="site-header">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Grow Godz home">
       <img src="gg-logo-white.jpg" alt="Grow Godz logo" />
       <span>Grow Godz</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="community.html">Community</a>
-      <a href="index.html#journal">Journal</a>
+      <a href="journal.html">Journal</a>
       <a href="index.html#contact">Contact</a>
     </nav>
 
-    <a class="ig-link" href="https://instagram.com/grow.godz" target="_blank">@grow.godz</a>
+    <a class="ig-link" href="https://instagram.com/grow.godz" target="_blank" rel="noopener">@grow.godz</a>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-copy">
+    <!-- Marketplace hero: category buttons act like showroom filter tabs and jump to real sections. -->
+    <section class="products-hero marketplace-hero">
+      <div class="products-hero-media" aria-hidden="true">
+        <img src="bottle-redv2.png" alt="" />
+        <img src="hoodie-black.png" alt="" />
+        <img src="gg-trays.png" alt="" />
+      </div>
+
+      <div class="products-hero-copy">
         <p class="eyebrow">Grow Godz Marketplace</p>
-        <h1>SHOP<br>THE DROP</h1>
-        <p class="lead">
-          Superism syrups, Grow Godz apparel, accessories, and limited drops built around quality, culture, and presentation.
+        <h1>Crafted for the Culture.</h1>
+        <p>
+          Browse future Superism drops, apparel, accessories, collectibles, and community goods built around Grow Godz.
         </p>
 
-        <div class="hero-actions">
-          <a href="#syrups" class="btn primary">Syrups</a>
-          <a href="#apparel" class="btn secondary">Apparel</a>
-          <a href="#accessories" class="btn secondary">Accessories</a>
-        </div>
-      </div>
-
-      <div class="hero-showcase">
-        <div class="orb"></div>
-        <div class="bottle-stack">
-          <img class="hero-bottle" src="bottle-redv2.png" alt="Superism Red bottle" />
-          <img class="ghost-bottle ghost-og" src="bottle-og.png" alt="Superism OG bottle" />
-          <img class="ghost-bottle ghost-purp" src="bottle-purp.png" alt="Superism Purp bottle" />
+        <div class="marketplace-tabs" aria-label="Product categories">
+          <a href="#syrups">Syrups</a>
+          <a href="#apparel">Apparel</a>
+          <a href="#accessories">Accessories</a>
+          <a href="#collectibles">Collectibles</a>
+          <a href="#future-drops">Future Drops</a>
         </div>
       </div>
     </section>
 
-    <section class="ticker">
-      <span>Superism Syrups</span>
-      <span>Grow Godz Apparel</span>
+    <section class="ticker" aria-label="Marketplace categories">
+      <span>Syrups</span>
+      <span>Apparel</span>
       <span>Accessories</span>
-      <span>Limited Drops</span>
-      <span>Community Collabs</span>
+      <span>Collectibles</span>
+      <span>Future Drops</span>
     </section>
 
-    <section class="section products" id="syrups">
-      <div class="section-heading center">
+    <!-- Syrups section: visible concept products with contained bottle art. -->
+    <section class="market-section cream-section" id="syrups">
+      <div class="market-section-heading">
         <p class="eyebrow">Category 01</p>
         <h2>Superism Syrups</h2>
-        <p>Three flavors to start the Superism product line.</p>
+        <p>Concept syrup products with premium presentation, flavor direction, and shelf-ready visual identity.</p>
       </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-image">
-            <img src="bottle-redv2.png" alt="Superism Red" />
-          </div>
-          <p class="tag">Signature</p>
+      <div class="market-grid three-up">
+        <article class="market-card contain-media">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="bottle-redv2.png" alt="Superism Red bottle" /></div>
           <h3>Superism Red</h3>
-          <p>Bold red syrup with premium presentation and strong shelf presence.</p>
-          <a href="index.html#contact">Get Updates</a>
+          <p>The signature red concept bottle with bold Grow Godz shelf presence.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
         </article>
 
-        <article class="product-card">
-          <div class="product-image">
-            <img src="bottle-og.png" alt="Superism OG" />
-          </div>
-          <p class="tag">Coming Soon</p>
+        <article class="market-card contain-media">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="bottle-og.png" alt="Superism OG bottle" /></div>
           <h3>Superism OG</h3>
-          <p>A classic flavor direction with a darker luxury identity.</p>
-          <a href="index.html#contact">Get Updates</a>
+          <p>A darker classic flavor direction built for a premium syrup lineup.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
         </article>
 
-        <article class="product-card">
-          <div class="product-image">
-            <img src="bottle-purp.png" alt="Superism Purp" />
-          </div>
-          <p class="tag">Future Drop</p>
+        <article class="market-card contain-media">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="bottle-purp.png" alt="Superism Purp bottle" /></div>
           <h3>Superism Purp</h3>
-          <p>A colorful future release built around flavor, culture, and presentation.</p>
-          <a href="index.html#contact">Get Updates</a>
+          <p>A future flavor concept focused on color, culture, and collectible presentation.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
         </article>
       </div>
     </section>
-    <section class="section products" id="apparel">
 
-  <div class="section-heading center">
-    <p class="eyebrow">Category 02</p>
-    <h2>Grow Godz Apparel</h2>
-    <p>Premium streetwear pieces built for the Grow Godz community.</p>
-  </div>
-
-  <div class="product-grid">
-
-    <article class="product-card">
-      <div class="product-image">
-        <img src="hoodie-black.png" alt="Black Grow Godz Hoodie">
-      </div>
-      <p class="tag">HOODIE</p>
-      <h3>Black Superism Hoodie</h3>
-      <p>Heavyweight hoodie with clean Grow Godz branding.</p>
-      <a href="index.html#contact">Coming Soon</a>
-    </article>
-
-    <article class="product-card">
-      <div class="product-image">
-        <img src="still-sip-tees.png" alt="I Still Sip Tee Collection">
-      </div>
-      <p class="tag">TEE</p>
-      <h3>I Still Sip Tee</h3>
-      <p>Available in black and white with oversized front print.</p>
-      <a href="index.html#contact">Coming Soon</a>
-    </article>
-
-    <article class="product-card">
-      <div class="product-image">
-        <img src="white-tee-red.png" alt="Superism Red Tee">
-      </div>
-      <p class="tag">TEE</p>
-      <h3>Superism Red Bottle Tee</h3>
-      <p>Premium heavyweight tee featuring the Superism Red bottle graphic.</p>
-      <a href="index.html#contact">Coming Soon</a>
-    </article>
-
-  </div>
-
-</section>
-
-    <section class="section products" id="accessories">
-
-      <div class="section-heading center">
-        <p class="eyebrow">Category 03</p>
-        <h2>Accessories</h2>
-
-        <p>
-          Premium accessories that complete the Grow Godz experience.
-        </p>
+    <!-- Apparel section: clothing gets its own strong marketplace row instead of only appearing in Brand Goods. -->
+    <section class="market-section dark-section" id="apparel">
+      <div class="market-section-heading">
+        <p class="eyebrow">Category 02</p>
+        <h2>Apparel</h2>
+        <p>Streetwear pieces designed for growers, supporters, and the Grow Godz lifestyle.</p>
       </div>
 
-      <div class="product-grid">
-
-<article class="product-card">
-
-  <div class="product-image">
-  <img src="gg-trays.png" alt="Superism Rolling Tray" />
-</div>
-
-  <p class="tag">ACCESSORY</p>
-
-  <h3>Superism Rolling Tray</h3>
-
-  <p>
-    Premium aluminum rolling tray featuring the Grow Godz x Superism identity.
-  </p>
-
-  <a href="#">Coming Soon</a>
-
-
+      <div class="market-grid three-up">
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="hoodie-black.png" alt="Black Superism hoodie" /></div>
+          <h3>Black Superism Hoodie</h3>
+          <p>Heavyweight black hoodie with clean Superism and Grow Godz branding.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
         </article>
 
-        <article class="product-card">
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="still-sip-tees.png" alt="I Still Sip tee collection" /></div>
+          <h3>I Still Sip Tee</h3>
+          <p>Graphic tee concept made for the community and future apparel drops.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
+        </article>
 
-  <div class="product-image">
-  <img src="sipping-cup.png" alt="Superism Double Cup Set" />
-</div>
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="white-tee-red.png" alt="Superism Red bottle tee" /></div>
+          <h3>Superism Red Bottle Tee</h3>
+          <p>A clean white tee centered around the Superism Red bottle artwork.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
+        </article>
+      </div>
+    </section>
 
-  <p class="tag">ACCESSORY</p>
-
-  <h3>GG "Sipping Cup" Double Cup Set</h3>
-
-  <p>
-    Signature stacked double cups inspired by the Grow Godz lifestyle.
-  </p>
-
-  <a href="#">Coming Soon</a>
-
-</article>
-
-        <article class="product-card">
-
-  <div class="product-image">
-  <img src="black-lighter.png" alt="Superism Clipper Lighter" />
-</div>
-
-  <p class="tag">ACCESSORY</p>
-
-  <h3>Superism Lighter</h3>
-
-  <p>
-    Premium lighter featuring exclusive Grow Godz branding.
-  </p>
-
-  <a href="#">Coming Soon</a>
-
-</article>
-
-<article class="product-card">
-
-  <div class="product-image">
-  <img src="red-poster.jpg" alt="Superism Wall Poster" />
-</div>
-
-  <p class="tag">ACCESSORY</p>
-
-  <h3>Superism Red Wall Poster</h3>
-
-  <p>
-    Premium collector's wall poster featuring exclusive Grow Godz artwork.
-  </p>
-
-  <a href="#">Coming Soon</a>
-
-</article>
-
-</div>
-
-</section>
-
-        <section class="section story">
-      <div>
-        <p class="eyebrow">Featured Drop</p>
-        <h2>Built for the culture.</h2>
+    <!-- Accessories section: everyday lifestyle goods with a poster-specific no-crop treatment. -->
+    <section class="market-section cream-section" id="accessories">
+      <div class="market-section-heading">
+        <p class="eyebrow">Category 03</p>
+        <h2>Accessories</h2>
+        <p>Premium accessories that turn the Grow Godz identity into useful, collectible objects.</p>
       </div>
 
-      <p>
-        Grow Godz is building a full product world around syrup, apparel,
-        accessories, community growers, and limited drops. This page will keep
-        growing as new mockups, product photos, and releases are added.
-      </p>
+      <div class="market-grid four-up">
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="sipping-cup.png" alt="GG Sipping Cup double cup set" /></div>
+          <h3>GG "Sipping Cup"</h3>
+          <p>Signature stacked cups inspired by the Grow Godz lifestyle.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
+        </article>
+
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="gg-trays.png" alt="Superism rolling tray" /></div>
+          <h3>Superism Rolling Tray</h3>
+          <p>Premium tray featuring the Grow Godz x Superism identity.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
+        </article>
+
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="black-lighter.png" alt="Superism lighter" /></div>
+          <h3>Superism Lighter</h3>
+          <p>Everyday carry lighter with exclusive Grow Godz branding.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
+        </article>
+
+        <article class="market-card poster-card contain-media">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="red-poster.jpg" alt="Superism Red Wall Poster" /></div>
+          <h3>Superism Red Wall Poster</h3>
+          <p>Collector wall poster featuring the Superism Red bottle artwork.</p>
+          <a class="product-link" href="#future-drops">Preview Drop</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Collectibles section: intentional placeholders for categories that can grow over time. -->
+    <section class="market-section dark-section" id="collectibles">
+      <div class="market-section-heading">
+        <p class="eyebrow">Category 04</p>
+        <h2>Collectibles</h2>
+        <p>Small-run objects, print goods, and future branded pieces for supporters of the Grow Godz universe.</p>
+      </div>
+
+      <div class="market-grid four-up">
+        <article class="market-card placeholder-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-placeholder">GG</div>
+          <h3>Stickers</h3>
+          <p>Premium sticker packs for bottles, trays, jars, laptops, and grow spaces.</p>
+          <a class="product-link" href="#future-drops">Coming Soon</a>
+        </article>
+
+        <article class="market-card poster-card contain-media">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="red-poster.jpg" alt="Limited Superism poster" /></div>
+          <h3>Limited Posters</h3>
+          <p>Wall-ready art drops built around Superism and Grow Godz visuals.</p>
+          <a class="product-link" href="#future-drops">Coming Soon</a>
+        </article>
+
+        <article class="market-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-card-image"><img src="gg-trays.png" alt="Collector Grow Godz tray" /></div>
+          <h3>Collector Trays</h3>
+          <p>Limited tray concepts made for display, use, and collection.</p>
+          <a class="product-link" href="#future-drops">Coming Soon</a>
+        </article>
+
+        <article class="market-card placeholder-card">
+          <span class="product-badge">Coming Soon</span>
+          <div class="market-placeholder">2026</div>
+          <h3>Future Grow Godz Collectibles</h3>
+          <p>Experimental branded goods reserved for future community releases.</p>
+          <a class="product-link" href="#future-drops">Coming Soon</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brand Goods strip: preview strip only; apparel remains fully represented above. -->
+    <section class="brand-goods-strip" aria-label="Brand goods preview">
+      <span>Brand Goods</span>
+      <a href="#apparel">Hoodies</a>
+      <a href="#apparel">T-Shirts</a>
+      <a href="#collectibles">Posters</a>
+      <a href="#accessories">Trays</a>
+      <a href="#accessories">Double Cups</a>
+      <a href="#accessories">Lighters</a>
+    </section>
+
+    <!-- Future Drops section: release-calendar style pipeline instead of vague placeholders. -->
+    <span class="anchor-target" id="future" aria-hidden="true"></span>
+    <section class="market-section future-drops" id="future-drops">
+      <div class="market-section-heading">
+        <p class="eyebrow">Release Pipeline</p>
+        <h2>Future Drops</h2>
+        <p>A living release calendar for future product categories, collaborations, and community-led drops.</p>
+      </div>
+
+      <div class="future-drop-grid pipeline-grid">
+        <article class="future-drop-card">
+          <span class="product-badge">Future Release</span>
+          <h3>Superism Syrup Expansion</h3>
+          <p>New flavors, packaging updates, and concept bottles for the Superism lineup.</p>
+        </article>
+
+        <article class="future-drop-card">
+          <span class="product-badge">Future Release</span>
+          <h3>Grow Godz Apparel</h3>
+          <p>Hoodies, tees, and seasonal pieces for the Grow Godz community.</p>
+        </article>
+
+        <article class="future-drop-card">
+          <span class="product-badge">Future Release</span>
+          <h3>Limited Accessories</h3>
+          <p>Small-batch trays, lighters, cups, stickers, and collectible goods.</p>
+        </article>
+
+        <article class="future-drop-card">
+          <span class="product-badge">Future Release</span>
+          <h3>Community Collabs</h3>
+          <p>Grower spotlights, creative partnerships, and community-driven products.</p>
+        </article>
+      </div>
     </section>
 
     <section class="section contact">
       <p class="eyebrow">Stay Updated</p>
-
       <h2>Join the next drop.</h2>
-
-      <p>
-        Follow Grow Godz for product updates, community features, and future releases.
-      </p>
+      <p>Follow Grow Godz for product updates, community features, and future releases.</p>
 
       <div class="contact-links">
         <a href="mailto:info@thegrowgodz.com">info@thegrowgodz.com</a>
-        <a href="https://instagram.com/grow.godz" target="_blank">@grow.godz</a>
+        <a href="https://instagram.com/grow.godz" target="_blank" rel="noopener">@grow.godz</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Grow Godz. All rights reserved.</p>
+    <p>&copy; 2026 Grow Godz. All rights reserved.</p>
     <p>Brand showcase only. Availability subject to applicable laws and platform policies.</p>
   </footer>
 </body>
