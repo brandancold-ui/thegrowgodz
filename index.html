@@ -6,6 +6,7 @@
   <title>Grow Godz | Premium Cannabis Culture</title>
   <meta name="description" content="Grow Godz is a premium cannabis culture brand connecting products, cultivation, community, marketplace drops, and creative lifestyle." />
   <link rel="stylesheet" href="style.css" />
+  <script src="navigation.js" defer></script>
 </head>
 <body class="home-page">
   <header class="site-header">
@@ -14,12 +15,19 @@
       <span>Grow Godz</span>
     </a>
 
-    <nav class="nav" aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open main navigation">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="products.html">Products</a>
       <a href="community.html">Community</a>
-      <a href="#story">About</a>
+      <a href="about.html">About</a>
       <a href="journal.html">Journal</a>
-      <a href="#join">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
     <a class="ig-link" href="https://instagram.com/grow.godz" target="_blank" rel="noopener">@grow.godz</a>
@@ -52,16 +60,6 @@
         </div>
       </div>
     </section>
-
-    <nav class="home-jump-strip" aria-label="Explore Grow Godz homepage sections">
-      <span>Explore Grow Godz</span>
-      <a href="#explore">Explore</a>
-      <a href="#products">Products</a>
-      <a href="#community">Community</a>
-      <a href="journal.html">Journal</a>
-      <a href="#story">About</a>
-      <a href="#join">Join</a>
-    </nav>
 
     <section class="home-section home-ecosystem" id="explore" aria-labelledby="ecosystem-title">
       <div class="home-section-heading reveal">
@@ -262,11 +260,13 @@
         <h3>Explore</h3>
         <a href="products.html">Products</a>
         <a href="community.html">Community</a>
+        <a href="about.html">About</a>
         <a href="journal.html">Journal</a>
         <a href="products.html#future-drops">Marketplace</a>
       </nav>
       <nav aria-label="Support footer links">
         <h3>Support</h3>
+        <a href="contact.html">Contact</a>
         <a href="https://instagram.com/grow.godz" target="_blank" rel="noopener">Instagram</a>
         <a href="mailto:info@thegrowgodz.com?subject=Grow%20Godz%20Newsletter">Newsletter</a>
         <a href="privacy.html">Privacy</a>

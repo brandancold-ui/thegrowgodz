@@ -6,6 +6,7 @@
   <title>Journal | Grow Godz</title>
   <meta name="description" content="Grow Godz journal updates covering cultivation, packaging, community spotlights, and the brand build as it happens." />
   <link rel="stylesheet" href="style.css" />
+  <script src="navigation.js" defer></script>
 </head>
 <body class="home-page journal-page">
   <header class="site-header">
@@ -14,12 +15,19 @@
       <span>Grow Godz</span>
     </a>
 
-    <nav class="nav" aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open main navigation">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="site-navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="community.html">Community</a>
-      <a href="journal.html">Journal</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="about.html">About</a>
+      <a href="journal.html" aria-current="page">Journal</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
     <a class="ig-link" href="https://instagram.com/grow.godz" target="_blank" rel="noopener">@grow.godz</a>
@@ -202,11 +210,13 @@
         <h3>Explore</h3>
         <a href="products.html">Products</a>
         <a href="community.html">Community</a>
+        <a href="about.html">About</a>
         <a href="journal.html">Journal</a>
         <a href="products.html#future-drops">Marketplace</a>
       </nav>
       <nav aria-label="Support footer links">
         <h3>Support</h3>
+        <a href="contact.html">Contact</a>
         <a href="https://instagram.com/grow.godz" target="_blank" rel="noopener">Instagram</a>
         <a href="mailto:info@thegrowgodz.com?subject=Grow%20Godz%20Newsletter">Newsletter</a>
         <a href="privacy.html">Privacy</a>
