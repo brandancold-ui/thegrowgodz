@@ -2847,8 +2847,6 @@ grid-template-columns:1fr;
   border-radius: 6px;
 }
 
-.home-page .home-feature-card:nth-child(1) img,
-.home-page .home-feature-card:nth-child(4) img,
 .home-page .home-market-card.contain-card img {
   object-fit: contain;
   padding: 16px;
@@ -3312,8 +3310,7 @@ grid-template-columns:1fr;
   height: clamp(300px, 28vw, 390px);
 }
 
-.journal-packaging-section .journal-card:nth-child(1) img,
-.journal-packaging-section .journal-card:nth-child(3) img {
+.journal-packaging-section .journal-card:nth-child(2) img {
   object-fit: contain;
   padding: 16px;
 }
@@ -3741,5 +3738,56 @@ grid-template-columns:1fr;
 @media (max-width: 420px) {
   .community-link-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Optimized photography integration: preserve existing layouts while giving the new scenes intentional crops. */
+.community-page .reel-preview {
+  position: relative;
+}
+
+.products-page.marketplace-page .products-hero-media {
+  opacity: 1;
+}
+
+.products-page.marketplace-page .products-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3,3,3,.98) 0%, rgba(3,3,3,.88) 38%, rgba(3,3,3,.28) 72%, rgba(3,3,3,.45) 100%),
+    linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.64));
+}
+
+.products-page.marketplace-page .products-hero-media img.products-hero-scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: .82;
+  transform: none;
+  filter: saturate(.92) contrast(1.06);
+}
+
+.market-card .brand-mark-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(200,167,96,.16), transparent 44%),
+    #080808;
+}
+
+.market-card .brand-mark-media img {
+  object-fit: contain;
+  padding: 56px;
+}
+
+@media (max-width: 760px) {
+  .products-page.marketplace-page .products-hero-media img.products-hero-scene {
+    object-position: 62% center;
+  }
+
+  .market-card .brand-mark-media img {
+    padding: 42px;
   }
 }
